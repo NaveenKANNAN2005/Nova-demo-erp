@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: nova-industries-erp
+    env: docker
+    plan: standard
+    region: singapore
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    healthCheckPath: /api/method/frappe.utils.change_log.get_versions
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: SITE_NAME
+        value: nova.local
+      - key: ADMIN_PASSWORD
+        value: NovaInd#2026!SecureBench
+    disk:
+      name: erpnext-data
+      mountPath: /home/naveen/frappe-bench/sites
+      sizeGB: 10

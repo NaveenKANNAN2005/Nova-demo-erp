@@ -1,0 +1,12 @@
+{
+ "db_name": "_319671b88525d170",
+ "db_password": "25kcqegcspOdnHZR",
+ "db_type": "mariadb",
+ "db_user": "_319671b88525d170",
+ "developer_mode": 0,
+ "installed_apps": [
+  "frappe",
+  "erpnext"
+ ],
+ "pause_scheduler": 0
+}

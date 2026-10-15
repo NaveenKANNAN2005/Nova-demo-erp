@@ -1,0 +1,38 @@
+{
+  "P-03": {
+    "status": "PASS",
+    "partial_pe": "ACC-PAY-2026-00003",
+    "final_pe": "ACC-PAY-2026-00004",
+    "cancelled_po": "PUR-ORD-2026-00005",
+    "details": "Verified partial payment leaves invoice 'Partly Paid' (\u20b92,956 outstanding), final payment marks 'Paid'. Cancelled PO verified docstatus=2."
+  },
+  "S-01": {
+    "status": "PASS",
+    "so": "SAL-ORD-2026-00003",
+    "dn": "MAT-DN-2026-00001",
+    "si": "ACC-SINV-2026-00001",
+    "pe": "ACC-PAY-2026-00005",
+    "details": "Customer ABC Retailers, 10 USB-C cables delivered (-10 stock), Invoiced \u20b92,360 (9% CGST + 9% SGST), paid in full via HDFC Bank."
+  },
+  "S-02": {
+    "status": "PASS",
+    "so": "SAL-ORD-2026-00004",
+    "dn_part1": "MAT-DN-2026-00002",
+    "dn_part2": "MAT-DN-2026-00003",
+    "details": "15 Wireless Mouse ordered. Delivered 10 first (Pending 5). Delivered remaining 5. Total delivered 15/15."
+  },
+  "S-03": {
+    "status": "PASS",
+    "si": "ACC-SINV-2026-00002",
+    "pe_part1": "ACC-PAY-2026-00006",
+    "pe_part2": "ACC-PAY-2026-00007",
+    "details": "Invoice \u20b96,490.00. Received 50% (\u20b93,245.00), status 'Partly Paid'. Received balance 50%, status 'Paid'."
+  },
+  "ACC-01": {
+    "status": "PASS",
+    "gl_debit": 101690.0,
+    "gl_credit": 101690.0,
+    "difference": 0.0,
+    "details": "GL perfectly balanced (Debit: \u20b9101,690.00 == Credit: \u20b9101,690.00). Tax and stock ledgers reconciled."
+  }
+}

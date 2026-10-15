@@ -1,0 +1,35 @@
+{
+  "P-02": {
+    "status": "PASS",
+    "po": "PUR-ORD-2026-00004",
+    "pr_part1": "MAT-PRE-2026-00002",
+    "pi": "ACC-PINV-2026-00002",
+    "pr_part2": "MAT-PRE-2026-00003",
+    "details": "Ordered 20 Nos. Received 12 first (Pending 8), Invoiced 12 (\u20b94,956.00 with 18% IGST), then received remaining 8. Final stock +20."
+  },
+  "P-03": {
+    "status": "FAIL",
+    "error": "Difference Amount must be zero"
+  },
+  "S-01": {
+    "status": "FAIL",
+    "error": "[Sales Order, SAL-ORD-2026-00001]: selling_price_list, price_list_currency, plc_conversion_rate"
+  },
+  "S-02": {
+    "status": "FAIL",
+    "error": "[Sales Order, SAL-ORD-2026-00002]: selling_price_list, price_list_currency, plc_conversion_rate"
+  },
+  "S-03": {
+    "status": "FAIL",
+    "error": "name 'dn2_1' is not defined"
+  },
+  "SEC-01": {
+    "status": "PASS",
+    "user": "manager_readonly@nova.local",
+    "details": "Read-only manager blocked from creating/submitting transactions (PermissionError), but can read records and reports."
+  },
+  "ACC-01": {
+    "status": "FAIL",
+    "error": "Stock mismatch for USB-C-001"
+  }
+}
